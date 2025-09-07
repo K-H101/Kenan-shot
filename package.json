@@ -4,8 +4,8 @@
   "description": "Minecraft XR Promotional Video - Interactive 3D Experience",
   "main": "index.html",
   "scripts": {
-    "start": "npx http-server . -p 8080 -o",
-    "dev": "npx http-server . -p 8080 -o -c-1",
+    "start": "npx http-server . -p 8081 -o",
+    "dev": "npx http-server . -p 8081 -o -c-1",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
