@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>瞄准镜功能测试</title>
+    <style>
+        body { margin: 0; background: #000; color: #fff; font-family: Arial; }
+        #info { position: absolute; top: 10px; left: 10px; z-index: 1000; }
+        #scopeTest { 
+            position: absolute; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%);
+            width: 200px; 
+            height: 200px; 
+            border: 4px solid #fff; 
+            border-radius: 50%; 
+            display: none;
+            background: rgba(255,0,0,0.1);
+        }
+        #crosshair {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+        }
+        .line-h { position: absolute; top: 50%; left: 20%; right: 20%; height: 2px; background: #f00; }
+        .line-v { position: absolute; left: 50%; top: 20%; bottom: 20%; width: 2px; background: #f00; }
+    </style>
+</head>
+<body>
+    <div id="info">
+        <div>按 E 键测试瞄准镜</div>
+        <div>瞄准镜状态: <span id="status">关闭</span></div>
+        <div>FOV: <span id="fov">75</span></div>
+    </div>
+    
+    <div id="scopeTest">
+        <div id="crosshair">
+            <div class="line-h"></div>
+            <div class="line-v"></div>
+        </div>
+    </div>
+
+    <script type="module">
+        let isScopeActive = false;
+        let fov = 75;
+        
+        document.addEventListener('keydown', (e) => {
+            if (e.code === 'KeyE') {
+                isScopeActive = !isScopeActive;
+                
+                const scope = document.getElementById('scopeTest');
+                const status = document.getElementById('status');
+                const fovDisplay = document.getElementById('fov');
+                
+                if (isScopeActive) {
+                    scope.style.display = 'block';
+                    status.textContent = '开启';
+                    fov = 7.5;
+                } else {
+                    scope.style.display = 'none';
+                    status.textContent = '关闭';
+                    fov = 75;
+                }
+                
+                fovDisplay.textContent = fov;
+                console.log('瞄准镜状态:', isScopeActive ? '开启' : '关闭');
+            }
+        });
+        
+        console.log('测试页面加载完成，按E键测试瞄准镜');
+    </script>
+</body>
+</html>

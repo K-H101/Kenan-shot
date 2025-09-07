@@ -1,0 +1,26 @@
+{
+  "name": "minecraft-xr-promo",
+  "version": "1.0.0",
+  "description": "Minecraft XR Promotional Video - Interactive 3D Experience",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server . -p 8080 -o",
+    "dev": "npx http-server . -p 8080 -o -c-1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "minecraft",
+    "xr",
+    "vr",
+    "ar",
+    "mixed-reality",
+    "three.js",
+    "animation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gsap": "^3.13.0",
+    "three": "^0.179.1"
+  }
+}
