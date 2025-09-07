@@ -2,7 +2,8 @@
 
 一个基于Three.js开发的第一人称3D射击游戏，具有完整的武器系统、敌人AI、粒子特效和音效系统。
 
-![游戏截图](https://via.placeholder.com/800x400/1a1a1a/ffffff?text=城市射击游戏)
+## 🌐 Languages
+*   [English (EN)](README-EN.md)
 
 ## 🎮 游戏特色
 
