@@ -1,9 +1,3 @@
-## 🤖 Assistant
-
-Okay, here's the English version of your README.md. I've kept the structure and meaning of each section intact.
-
----
-
 # 🎯 City Shooter Game
 
 A first-person 3D shooter game developed with Three.js, featuring a full weapon system, enemy AI, particle effects, and a sound effect system.
